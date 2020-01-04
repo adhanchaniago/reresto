@@ -2,6 +2,13 @@
 Project tentang aplikasi restoran
 
 ## Instalasi
+1. Clone Project ke dalam htdocs/direktori yang dituju
+2. Buka terminal/prompt dan change direktori ke project ini
+3. Ketik composer install
+4. Konfigurasi file .env disesusuaikan dengan konfigurasi database
+5. Ketik php artisan key:generate
+6. Ketik php artisan migrate:fresh --seed
+7. Selesai hehe!!
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
