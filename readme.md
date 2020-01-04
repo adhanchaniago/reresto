@@ -10,6 +10,12 @@ Project tentang aplikasi restoran
 6. Ketik php artisan migrate:fresh --seed
 7. Selesai hehe!!
 
+# Login
+1. username = admin pass = admin
+2. username = waiter pass = waiter
+3. username = kasir pass = kasir
+4. username = owner pass = owner
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
