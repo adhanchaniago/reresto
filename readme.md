@@ -1,4 +1,4 @@
-![reres](https://user-images.githubusercontent.com/38467736/71770195-72ef3f00-2f5c-11ea-922e-8f95e9d68556.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/38467736/71770195-72ef3f00-2f5c-11ea-922e-8f95e9d68556.png"></p>
 
 ## Tentang Project
 Project tentang aplikasi restoran
