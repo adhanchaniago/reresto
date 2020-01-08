@@ -6,6 +6,7 @@ use App\Meja;
 use App\Menu;
 use App\Pesanan;
 use App\Transaksi;
+use App\User;
 use Illuminate\Contracts\Support\Renderable;
 
 class HomeController extends Controller
@@ -27,6 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+            //$user = User::get();
             $menu = Menu::get();
             $meja = Meja::get();
             $pesanan = Pesanan::with('user','detail_pesanan','meja')->get();

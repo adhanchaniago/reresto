@@ -31,6 +31,7 @@ Route::resources([
     'pesanan/{id}/detail' => 'DetailPesananController',
     'transaksi' => 'TransaksiController',
     'laporan' => 'LaporanController',
+    'user' => 'UserController'
 ]);
 
 //Total

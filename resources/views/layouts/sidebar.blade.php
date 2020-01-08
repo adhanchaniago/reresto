@@ -11,6 +11,17 @@
                 <li><a class="nav-item {{ setActive(['transaksi']) }}" href="{{url('/transaksi')}}"><i class="lnr lnr-coffee-cup"></i> <span>Transaksi</span></a></li>
                 @if(Auth::user()->level != 'admin')
                 <li><a class="nav-item {{ setActive(['laporan']) }}" href="{{url('/laporan')}}"><i class="lnr lnr-book"></i> <span>Laporan</span></a></li>
+{{--                    <li>--}}
+{{--                        <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i> <span>Laporan</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>--}}
+{{--                        <div id="subPages" class="collapse ">--}}
+{{--                            <ul class="nav">--}}
+{{--                                <li><a href="{{url('/laporan')}}" class="">Menu</a></li>--}}
+{{--                                <li><a href="{{url('/laporan')}}" class="">Meja</a></li>--}}
+{{--                                <li><a href="{{url('/laporan')}}" class="">Pesanan</a></li>--}}
+{{--                                <li><a href="{{url('/laporan')}}" class="">Transaksi</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
                 @endif
 {{--                <li>--}}
 {{--                    <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>--}}
