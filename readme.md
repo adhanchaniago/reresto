@@ -1,3 +1,23 @@
+<p align="center"><img src="https://user-images.githubusercontent.com/38467736/71770195-72ef3f00-2f5c-11ea-922e-8f95e9d68556.png"></p>
+
+## Tentang Project
+Project tentang aplikasi restoran
+
+## Instalasi
+1. Clone Project ke dalam htdocs/direktori yang dituju
+2. Buka terminal/prompt dan change direktori ke project ini
+3. Ketik composer install
+4. Konfigurasi file .env disesusuaikan dengan konfigurasi database
+5. Ketik php artisan key:generate
+6. Ketik php artisan migrate:fresh --seed
+7. Selesai hehe!!
+
+# Login
+1. username = admin pass = admin
+2. username = waiter pass = waiter
+3. username = kasir pass = kasir
+4. username = owner pass = owner
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -30,6 +50,10 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+
+## Small Benefit
+
+++Route Resource.
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
