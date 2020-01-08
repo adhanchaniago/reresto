@@ -2,17 +2,13 @@
 
 @section('content')
     <div class="panel panel-headline">
-        <div class="panel-heading" style="padding-bottom: 0px">
+        <div class="panel-heading" style="padding-bottom: 0">
             <h3 class="panel-title">Transaksi</h3>
             <p class="panel-subtitle">Melakukan pembayaran setelah pemesanan</p>
             @if(Auth::user()->level == 'kasir')
-                <a href="{{ route('transaksi.create') }}" class="btn btn-primary btn-rounded btn-fw" style="margin-top: 10px; margin-bottom: -10px;"><i class="fa fa-plus"></i> Tambah Transaksi</a>
-                <br>
-                <br>
+                <a href="{{ route('transaksi.create') }}" class="btn btn-primary btn-rounded btn-fw" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa fa-plus"></i> Tambah Transaksi</a>
             @else
-                <a href="{{ route('transaksi.create') }}" class="btn btn-primary btn-rounded btn-fw disabled" style="margin-top: 10px; margin-bottom: -10px;"><i class="fa fa-plus"></i> Tambah Transaksi</a>
-                <br>
-                <br>
+                <a href="{{ route('transaksi.create') }}" class="btn btn-primary btn-rounded btn-fw disabled" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa fa-plus"></i> Tambah Transaksi</a>
             @endif
 
             @if (Session::has('sukses'))
