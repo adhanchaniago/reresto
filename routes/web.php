@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
 //Route::get('/login', 'AuthController@login');
 //Route::post('/postlogin', 'AuthController@postlogin');

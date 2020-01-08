@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label for="foto" class="">Foto</label>
                     <div class="">
-                        <img class="product" width="200" height="200" @if($user->foto) src="{{ asset('images/user/'.$user->foto) }}" @endif />
+                        <img class="product" width="150" height="150" @if($user->foto) src="{{ asset('images/user/'.$user->foto) }}" @else src="{{ asset('images/user/default.png') }}" @endif />
 {{--                        <input type="file" class="uploads form-control" style="margin-top: 20px;" name="foto" readonly>--}}
                     </div>
                 </div>
