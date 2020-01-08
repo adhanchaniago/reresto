@@ -7,7 +7,7 @@
         <div class="panel panel-headline">
             <div class="panel-heading">
                 <h3 class="panel-title">User {{$user->name}}</h3>
-                <p class="panel-subtitle">Info data user</p>
+                <p class="panel-subtitle">Info Data Pengguna</p>
             </div>
             <div class="panel-body">
                 <div class="form-group">
@@ -29,6 +29,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="foto" class="">Foto</label>
+                    <div class="">
+                        <img class="product" width="200" height="200" @if($user->foto) src="{{ asset('images/user/'.$user->foto) }}" @endif />
+{{--                        <input type="file" class="uploads form-control" style="margin-top: 20px;" name="foto" readonly>--}}
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="level" class="">Level</label>
                     <div class="">
                         <select name="level" id="" class="form-control" readonly>
@@ -40,7 +47,7 @@
                     </div>
                 </div>
 {{--                <button type="submit" class="btn btn-primary" id="submit">Submit</button>--}}
-                <button type="reset" class="btn btn-danger">Edit</button>
+                <button type="reset" class="btn btn-primary">Edit</button>
                 <a href="{{url('/')}}" class="btn btn-light pull-right">Kembali</a>
             </div>
         </div>

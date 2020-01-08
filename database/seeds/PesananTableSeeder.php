@@ -13,7 +13,7 @@ class PesananTableSeeder extends Seeder
     public function run()
     {
         Pesanan::create([
-            'id_user' => 1,
+            'id_user' => 2,
             'id_meja' => 1
         ]);
     }

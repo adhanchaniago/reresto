@@ -44,7 +44,7 @@
 {{--                </li>--}}
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{url('assets/img/user6.jpg')}}" class="img-circle" alt="Avatar"> <span>{{Auth::User()->name}}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="@if(Auth::user()->foto == '') {{asset('images/user/default.png')}} @else {{asset('images/user/'.Auth::user()->foto)}} @endif" class="img-circle" alt="Avatar"> <span>{{Auth::User()->name}}</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{route('user.show', Auth::user()->id)}}"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 {{--                        <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>--}}
