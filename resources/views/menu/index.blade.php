@@ -31,7 +31,7 @@
                                 <th>Nama</th>
                                 <th>Harga</th>
                                 <th>Jenis Menu</th>
-                                @if(Auth::user()->level == 'admin' && Auth::user()->level == 'waiter')
+                                @if(Auth::user()->level == 'admin' || Auth::user()->level == 'waiter')
                                 <th>Opsi</th>
                                 @endif
                             </tr>
@@ -46,7 +46,7 @@
                                     <td>{{ $m->nama }}</td>
                                     <td>{{ $m->harga }}</td>
                                     <td>{{ $m->jenis_menu}}</td>
-                                    @if(Auth::user()->level == 'admin' && Auth::user()->level == 'waiter')
+                                    @if(Auth::user()->level == 'admin' || Auth::user()->level == 'waiter')
                                     <td>
                                         <div class="column">
                                             <a href="{{route('menu.edit',$m->id)}}" class="btn btn-default fa fa-pencil"></a>
