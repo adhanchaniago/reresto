@@ -6,13 +6,9 @@
             <h3 class="panel-title">Detail Pesanan</h3>
             <p class="panel-subtitle">Detail atau rincian dari pesanan yang sudah dilakukan di meja <b></b> </p>
             @if(Auth::user()->level == 'waiter')
-                <a href="{{ route('detail.create',$data->id) }}" class="btn btn-primary btn-rounded btn-fw" style="margin-top: 10px; margin-bottom: -10px;"><i class="fa fa-plus"></i> Tambah Detail</a>
-                <br>
-                <br>
+                <a href="{{ route('detail.create',$data->id) }}" class="btn btn-primary btn-rounded btn-fw" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa fa-plus"></i> Tambah Detail</a>
                 @else
-                <a href="{{ route('detail.create',$data->id) }}" class="btn btn-primary btn-rounded btn-fw disabled" style="margin-top: 10px; margin-bottom: -10px;"><i class="fa fa-plus"></i> Tambah Detail</a>
-                <br>
-                <br>
+                <a href="{{ route('detail.create',$data->id) }}" class="btn btn-primary btn-rounded btn-fw disabled" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa fa-plus"></i> Tambah Detail</a>
             @endif
             @if (Session::has('sukses'))
                 <div class="alert alert-success mb-4" role="alert" style="margin-bottom: 0px;">

@@ -114,7 +114,7 @@ class DetailPesananController extends Controller
         ]);
 
         $this->mupdate($request,$id);
-        return redirect()->route('detail.index', $id_pesanan)->with('sukses','Edit Detail Pesanan Berhasil!!');
+        return redirect()->route('detail.index', $id)->with('sukses','Edit Detail Pesanan Berhasil!!');
         /*
         DetailPesanan::where('id', $id)->first();
         (new \App\DetailPesanan)->update([

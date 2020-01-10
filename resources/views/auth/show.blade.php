@@ -39,10 +39,13 @@
                     <label for="level" class="">Level</label>
                     <div class="">
                         <select name="level" id="" class="form-control" readonly>
-                            <option value="Admin" @if ($user->level == 'admin') selected @endif>Admin</option>
-                            <option value="Waiter" @if ($user->level == 'waiter') selected @endif>Waiter</option>
-                            <option value="Kasir" @if ($user->level == 'kasir') selected @endif>Kasir</option>
-                            <option value="Owner" @if ($user->level == 'owner') selected @endif>Owner</option>
+                            <option value="{{$user->id}}">{{$user->username}}</option>
+                            @foreach ($user as $u)
+                                @if ($user->id != Auth::user()->level)
+                                <option value="{{$user->id}}">{{$user->username}}</option>
+                                @endif
+                            @endforeach
+                            
                         </select>
                     </div>
                 </div>

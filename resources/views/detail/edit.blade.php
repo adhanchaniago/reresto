@@ -25,7 +25,7 @@
                     <label for="">Jumlah</label>
                     <input type="number" value="{{$data->jumlah}}" name="jumlah" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">Tambahkan</button>
+                <button type="submit" class="btn btn-primary" id="submit">Mengubah</button>
                 <button type="reset" class="btn btn-danger">Reset</button>
                 <a href="{{route('detail.index','id')}}" class="btn btn-light pull-right">Kembali</a>
             </div>
