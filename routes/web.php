@@ -34,6 +34,8 @@ Route::resources([
     'user' => 'UserController'
 ]);
 
+Route::get('pesanan/{id}/detail/edit/{id}' ,'DetailPesananController@edit');
+
 //Total
 Route::get('pesanan/total/{id}', 'PesananController@getTotal');
 Route::get('pesanan/json/{id}', 'PesananController@getJson');

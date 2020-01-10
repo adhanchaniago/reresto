@@ -87,7 +87,7 @@ class DetailPesananController extends Controller
         $data = DetailPesanan::where('id',$id)->with('menu')->first();
         $data2 = Pesanan::where('id',$id)->with('detail_pesanan')->first();
         $menu = Menu::all();
-        return view('detail.edit', compact('data','menu', 'id_pesanan'), compact('data2','id_pesanan'));
+        return view('detail.edit', compact('data','menu','data2', 'id_pesanan'));
     }
 
     /**
@@ -113,6 +113,8 @@ class DetailPesananController extends Controller
             'jumlah' => 'required',
         ]);
 
+        $this->mupdate($request,$id);
+        return redirect()->route('detail.index', $id_pesanan)->with('sukses','Edit Detail Pesanan Berhasil!!');
         /*
         DetailPesanan::where('id', $id)->first();
         (new \App\DetailPesanan)->update([
@@ -120,8 +122,7 @@ class DetailPesananController extends Controller
             'jumlah' => $request->get('jumlah')
         ]);
         */
-        $this->mupdate($request,$id);
-        return redirect()->route('detail.index', $id_pesanan)->with('sukses','Edit Detail Pesanan Berhasil!!');
+        
     }
 
     /**
