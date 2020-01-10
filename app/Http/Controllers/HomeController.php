@@ -31,7 +31,7 @@ class HomeController extends Controller
             //$user = User::get();
             $menu = Menu::get();
             $meja = Meja::get();
-            $pesanan = Pesanan::with('user','detail_pesanan','meja')->get();
+            $pesanan = Pesanan::get();
             $transaksi = Transaksi::with('pesanan')->get();
             $trans = Transaksi::with('pesanan')->orderBy('created_at', 'desc')->take(5)->get();
             return view('home', compact('transaksi', 'pesanan','meja','menu','trans'));

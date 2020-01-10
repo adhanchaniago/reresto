@@ -40,12 +40,6 @@
                     <div class="">
                         <select name="level" id="" class="form-control" readonly>
                             <option value="{{$user->id}}">{{$user->username}}</option>
-                            @foreach ($user as $u)
-                                @if ($user->id != Auth::user()->level)
-                                <option value="{{$user->id}}">{{$user->username}}</option>
-                                @endif
-                            @endforeach
-                            
                         </select>
                     </div>
                 </div>
