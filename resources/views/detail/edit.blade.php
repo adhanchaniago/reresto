@@ -27,7 +27,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary" id="submit">Tambahkan</button>
                 <button type="reset" class="btn btn-danger">Reset</button>
-                <a href="" class="btn btn-light pull-right">Kembali</a>
+                <a href="{{route('detail.index','id')}}" class="btn btn-light pull-right">Kembali</a>
             </div>
         </div>
     </form>

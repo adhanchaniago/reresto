@@ -39,7 +39,7 @@ class DetailPesananController extends Controller
     {
         $data = Menu::all();
         $data2 = Pesanan::where('id',$id)->with('detail_pesanan')->first();
-        return view('detail.create', compact('data','id'), compact('data2','id'));
+        return view('detail.create', compact('data','data2','id'));
     }
 
     /**
