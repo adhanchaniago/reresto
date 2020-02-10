@@ -7,8 +7,10 @@
             <p class="panel-subtitle">Halaman untuk mencetak laporan</p>
         </div>
         <div class="panel-body">
-            <div class="row">
-
+            <div class="column">
+                <div class="column">
+                    <h1><b>Fitur Belum Dirilis</b></h1>
+                </div>
             </div>
         </div>
     </div>
