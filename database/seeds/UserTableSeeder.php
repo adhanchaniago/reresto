@@ -18,7 +18,8 @@ class UserTableSeeder extends Seeder
             'email' => 'hanavialvarel@gmail.com',
             'password' => Hash::make('admin'),
             'name' => 'Hanavi',
-            'level' => 'admin'
+            'level' => 'admin',
+            'foto' => 'user6.jpg',
         ]);
 
         User::create([
@@ -26,7 +27,8 @@ class UserTableSeeder extends Seeder
             'email' => 'raihan@gmail.com',
             'password' => Hash::make('waiter'),
             'name' => 'Raihan',
-            'level' => 'waiter'
+            'level' => 'waiter',
+            'foto' => 'user6.jpg',
         ]);
 
         User::create([
@@ -34,7 +36,8 @@ class UserTableSeeder extends Seeder
             'email' => 'squidward@gmail.com',
             'password' => Hash::make('kasir'),
             'name' => 'Squidward',
-            'level' => 'kasir'
+            'level' => 'kasir',
+            'foto' => 'user6.jpg',
         ]);
 
         User::create([
@@ -42,7 +45,8 @@ class UserTableSeeder extends Seeder
             'email' => 'rokim@gmail.com',
             'password' => Hash::make('owner'),
             'name' => 'Pak Rokim',
-            'level' => 'owner'
+            'level' => 'owner',
+            'foto' => 'user6.jpg',
         ]);
     }
 }
