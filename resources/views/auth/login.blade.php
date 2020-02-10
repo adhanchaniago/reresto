@@ -37,7 +37,7 @@
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <label for="signin-email" class="control-label sr-only">Username</label>
-                                <input name="username" type="text" class="form-control" id="signin-email"  placeholder="Username">
+                                <input name="email" type="email" class="form-control" id="signin-email"  placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <label for="signin-password" class="control-label sr-only">Password</label>

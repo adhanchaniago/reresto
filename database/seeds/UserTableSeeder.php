@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
     {
         User::create([
             'username' => 'admin',
-            'email' => 'hanavialvarel@gmail.com',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('admin'),
             'name' => 'Hanavi',
             'level' => 'admin',
@@ -24,7 +24,7 @@ class UserTableSeeder extends Seeder
 
         User::create([
             'username' => 'waiter',
-            'email' => 'raihan@gmail.com',
+            'email' => 'waiter@gmail.com',
             'password' => Hash::make('waiter'),
             'name' => 'Raihan',
             'level' => 'waiter',
@@ -33,7 +33,7 @@ class UserTableSeeder extends Seeder
 
         User::create([
             'username' => 'kasir',
-            'email' => 'squidward@gmail.com',
+            'email' => 'kasir@gmail.com',
             'password' => Hash::make('kasir'),
             'name' => 'Squidward',
             'level' => 'kasir',
@@ -42,7 +42,7 @@ class UserTableSeeder extends Seeder
 
         User::create([
             'username' => 'owner',
-            'email' => 'rokim@gmail.com',
+            'email' => 'owner@gmail.com',
             'password' => Hash::make('owner'),
             'name' => 'Pak Rokim',
             'level' => 'owner',
