@@ -62,30 +62,30 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Konfirmasi Hapus Menu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Konfirmasi Hapus Menu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="{{route('menu.destroy', $m->id)}}" method="post">
+                        {{ csrf_field() }}
+                        {{ method_field('delete') }}
+                        <input type="hidden" name="id" id="menuid" readonly>
+                        <div class="modal-body">
+                            Apakah anda yakin ingin menghapus menu <b><span id="nomer">{{$m->nama}}</span></b>? Aksi ini tidak dapat di-<i>undo</i>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                            <input type="submit" value="Hapus" class="btn btn-danger">
+                        </div>
+                    </form>
                 </div>
-                <form action="{{route('menu.destroy', $m->id)}}" method="post">
-                    {{ csrf_field() }}
-                    {{ method_field('delete') }}
-                    <input type="hidden" name="id" id="menuid" readonly>
-                    <div class="modal-body">
-                        Apakah anda yakin ingin menghapus menu <b><span id="nomer">{{$m->nama}}</span></b>? Aksi ini tidak dapat di-<i>undo</i>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-                        <input type="submit" value="Hapus" class="btn btn-danger">
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
 
 @endsection
 {{--@section('js')--}}
