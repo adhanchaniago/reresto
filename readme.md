@@ -13,10 +13,10 @@ Project tentang aplikasi restoran (Masih Dalam Tahap Pengembangan)
 7. Selesai hehe!!
 
 # Login
-1. email = admin@gmail.com pass = admin
-2. email = waiter@gmail.com pass = waiter
-3. email = kasir@gmail.com pass = kasir
-4. email = owner@gmail.com pass = owner
+1. username = admin pass = admin
+2. username = waiter pass = waiter
+3. username = kasir pass = kasir
+4. username = owner pass = owner
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
